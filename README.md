@@ -1,46 +1,94 @@
-# Getting Started with Create React App
+## **Expense Tracker**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Table of Contents**
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Folder Structure](#folder-structure)
+7. [Contributing](#contributing)
+8. [License](#license)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+**Introduction**
+The **Expense Tracker** is a simple React-based web application that helps users manage their daily expenses. Users can add, sort, filter, and export expenses in a text format. This application is designed to be lightweight, user-friendly, and responsive.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Features**
+- Add expenses with details like amount, type (debit/credit), and description.
+- View, sort, and filter expenses.
+- Export expense data to a text file.
+- Responsive design using Tailwind CSS.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+**Technologies Used**
+- **React**: Frontend framework for building the user interface.
+- **TypeScript**: For type-safe coding (optional, based on your setup).
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Radix UI**: For interactive UI components like dropdowns and radio buttons.
+- **HTML5/JavaScript (ES6+):** Core web technologies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### **Installation**
+Follow these steps to run the project locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/expense-tracker.git
+   cd expense-tracker
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Dependencies**
+   Make sure you have [Node.js](https://nodejs.org/) installed. Then, run:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the Development Server**
+   ```bash
+   npm start
+   ```
+   This will start the server and open the app in your browser at `http://localhost:3000`.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Usage**
+1. Open the application in your browser.
+2. Add an expense by entering the amount, selecting a type (debit/credit), and providing a description.
+3. Use sorting and filtering options to view specific transactions.
+4. Export expenses to a `.txt` file by clicking the "Export to PDF" button.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Folder Structure**
+```
+expense-tracker/
+├── src/
+│   ├── components/         # Reusable UI components
+│   │   ├── ui/             # UI-specific components (Button, Input, etc.)
+│   ├── App.tsx             # Main app component
+│   ├── index.tsx           # Entry point for the app
+│   ├── styles/             # Tailwind CSS and other styling files
+│   └── assets/             # Static assets (images, icons, etc.)
+├── public/                 # Public files (HTML, favicon, etc.)
+├── package.json            # Project dependencies and scripts
+├── README.md               # Project documentation
+└── tailwind.config.js      # Tailwind CSS configuration
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+**Contributing**
+Contributions are welcome!  
+If you'd like to contribute, please fork the repository and submit a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**License**
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for details.
